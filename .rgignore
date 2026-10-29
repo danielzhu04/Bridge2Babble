@@ -1,0 +1,3 @@
+# Let plain `rg --files` find Kane tests and evidence, which are hidden and gitignored.
+!.testmuai/
+!*.evidence

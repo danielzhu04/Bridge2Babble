@@ -1,0 +1,131 @@
+{
+  "test_id": "7bac8367-93f6-4396-84ab-b2ebdb3cb995",
+  "version": "v4",
+  "auto_heal_version": "AH2",
+  "session_id": "0007e53c-c460-43f7-ac4e-20b9aaa5fec6",
+  "org_id": "3398377",
+  "user_id": "3574496",
+  "url": "",
+  "start_timestamp": "2026-10-24T21:53:08.358Z",
+  "end_timestamp": "2026-10-24T21:54:40.922Z",
+  "status": "success",
+  "commit_id": "0007e53c-c460-43f7-ac4e-20b9aaa5fec6",
+  "instructions": [
+    {
+      "content_type": "generative_block",
+      "instruction_id": "generative_block_8d1f4ef680e6455a855b1f33072f7703",
+      "generative_id": "8d1f4ef680e6455a855b1f33072f7703",
+      "objective": "Launch Bridge2Babble on an iPhone 13 running iOS 18. Use only the synthetic phrase ‘Do you have any allergies to medication?’ and do not enter patient data. First read the exact language readiness label. If it says ‘Ready offline · Apple Translation’, do not tap any Download control or language preparation control: enter the synthetic phrase, tap Translate, verify the conversation shows the original phrase and a Spanish translation preserving the medication-allergy meaning, then open Handoff and verify the bilingual turn plus the machine-translated and unverified safety notice. If the readiness label does not say ‘Ready offline · Apple Translation’, store its exact text as ‘readiness_message’, do not tap Download, do not attempt translation, and report this as an environment-readiness result.",
+      "status": "success",
+      "children": [
+        {
+          "content_type": "conditional_block",
+          "instruction_id": "if_else_8338203d",
+          "instruction": "If-else checkpoint cp_1: condition 'else' matched",
+          "instruction_class": "driver_action",
+          "command": "",
+          "status": "success",
+          "resolved_branch_index": 1,
+          "branches": [
+            {
+              "branch_index": 0,
+              "condition": "the exact language readiness label says ‘Ready offline · Apple Translation’",
+              "branch_type": "sub_objective",
+              "passed": false,
+              "sub_objective": null,
+              "custom_event": "@v16:do not tap any Download control or language preparation control: enter the synthetic phrase, tap Translate, verify the conversation shows the original phrase and a Spanish translation preserving the medication-allergy meaning, then open Handoff and verify the bilingual turn plus the machine-translated and unverified safety notice.",
+              "children": [],
+              "sub_checks": [
+                {
+                  "description": "the exact language readiness label says ‘Ready offline · Apple Translation’",
+                  "store_key": "language_readiness_label_ready_offline",
+                  "expected_value": "Ready offline · Apple Translation",
+                  "stored_value": "{{language_readiness_label_ready_offline}}",
+                  "operator": "equals",
+                  "transforms": [
+                    "strip"
+                  ]
+                }
+              ],
+              "composite_operator": "and"
+            },
+            {
+              "branch_index": 1,
+              "condition": null,
+              "branch_type": "sub_objective",
+              "passed": true,
+              "sub_objective": null,
+              "custom_event": "@v16:Get the exact language readiness label and save as {{readiness_message}}. do not tap Download, do not attempt translation, and report this as an environment-readiness result.",
+              "children": [],
+              "sub_checks": [],
+              "composite_operator": "and"
+            }
+          ],
+          "generative_id": "",
+          "generative_objective": "",
+          "variables_used": {},
+          "classification_layer_resp": [],
+          "classification_error": {},
+          "used_variables": [],
+          "user_variables": "[]",
+          "module_id": "",
+          "module_execution_index": 0,
+          "module_version": "",
+          "plan_id": "",
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "error": null,
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "start_timestamp": "2026-10-24T21:54:10.721955+00:00",
+          "end_timestamp": "",
+          "type": "agent_generated",
+          "hook": null,
+          "hook_type": null,
+          "evaluation_context": {},
+          "query_variables": {}
+        }
+      ],
+      "error_message": null,
+      "error_code": null,
+      "result_code": null,
+      "bifurcation_context": [],
+      "approach_reason": [
+        "Opened Bridge2Babble on an iPhone 13 running iOS 18 to check the language readiness label.",
+        "The displayed label was “Status: Ready,” rather than the required “Ready offline · Apple Translation.”",
+        "No phrase was entered and no translation or language download was attempted, because the required offline-readiness label was not shown."
+      ],
+      "one_liner": null
+    }
+  ],
+  "modules": [],
+  "uploaded_files": [],
+  "test_params": [],
+  "test_level_variables": "[{\"name\":\"language_readiness_label_ready_offline\",\"value\":\"Status: Ready\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"readiness_message\",\"value\":\"Status: Ready\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
+  "test_global_variables": [
+    {
+      "id": 464885,
+      "name": "spanish_clinic_phrase",
+      "value": "¿Tiene alergias a algún medicamento?",
+      "session_value": "¿Tiene alergias a algún medicamento?",
+      "is_persist": false,
+      "environment_id": 0,
+      "environment_name": "No Env"
+    }
+  ],
+  "max_network_wait": 0,
+  "wait_buffer": 0,
+  "network_throttle": {},
+  "secrets": [],
+  "totp": [],
+  "environment_id": 0,
+  "environment": "",
+  "mobile_browser": false,
+  "native_popups": [],
+  "smartui": {},
+  "module_index": 0
+}

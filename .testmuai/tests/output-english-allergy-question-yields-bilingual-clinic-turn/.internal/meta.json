@@ -1,0 +1,18 @@
+{
+  "test_id": "a0fb8034-0bf2-43e1-8cf1-a927f05a0d57",
+  "project_id": "01M5P584ZD26S4TSWZBHHC74BD",
+  "folder_id": "01M5P58HH5NPYBC67MHNAXK3SC",
+  "org_id": "3398377",
+  "session_name": "english-allergy-question-yields-bilingual-clinic-turn",
+  "commit_id": "aae7f10d-dc4d-4c3f-a4f5-78ec3104265e",
+  "testcase_id": "01M5QSF6N897R9Z2286S85H6VZ",
+  "executions": [
+    {
+      "execution_id": "a3b0ac80-22a2-4aa0-a3b8-56c2ba0164e7",
+      "run_kind": "author",
+      "status": "broken",
+      "valid": true,
+      "at": "2026-10-24T20:32:54.615Z"
+    }
+  ]
+}

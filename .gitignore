@@ -1,0 +1,8 @@
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+*.evidence
+# kane-cli context store: shared through a location, never merged with git
+.context/

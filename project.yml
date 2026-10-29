@@ -1,0 +1,28 @@
+name: Bridge2Babble
+options:
+  bundleIdPrefix: com.danielzhu
+  deploymentTarget:
+    iOS: "18.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: "5AB4TB7CFV"
+targets:
+  Bridge2Babble:
+    type: application
+    platform: iOS
+    sources:
+      - Bridge2Babble
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.danielzhu.Bridge2Babble
+        GENERATE_INFOPLIST_FILE: YES
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_KEY_CFBundleDisplayName: Bridge2Babble
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Bridge2Babble listens to what you say so it can translate it.
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Bridge2Babble turns your speech into text on your device so it can translate it.
+        CODE_SIGN_STYLE: Automatic

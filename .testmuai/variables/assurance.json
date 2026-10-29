@@ -1,0 +1,7 @@
+{
+  "spanish_clinic_phrase": {
+    "value": "¿Tiene alergias a algún medicamento?",
+    "secret": false,
+    "description": "A Spanish clinic phrase to type as the source for the reverse-direction translation test; supply the expected meaning for human review."
+  }
+}

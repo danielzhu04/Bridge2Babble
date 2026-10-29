@@ -1,0 +1,693 @@
+{
+  "test_id": "400a1963-2448-4add-8fe6-ef8c7fecae45",
+  "version": "v4",
+  "auto_heal_version": "AH2",
+  "session_id": "3eaceb39-6d85-420e-97ab-f90c23fe91f8",
+  "org_id": "3398377",
+  "user_id": "3574496",
+  "url": "",
+  "start_timestamp": "2026-10-24T21:35:12.809Z",
+  "end_timestamp": "2026-10-24T21:36:39.053Z",
+  "status": "error",
+  "commit_id": "3eaceb39-6d85-420e-97ab-f90c23fe91f8",
+  "instructions": [
+    {
+      "content_type": "generative_block",
+      "instruction_id": "generative_block_12445d9028294f6881a7c76499be8f8f",
+      "generative_id": "12445d9028294f6881a7c76499be8f8f",
+      "objective": "Launch Bridge2Babble on a real cloud iPhone. Use no patient data and do not tap Download. Verify English is the source language and Spanish is the destination language. Store the exact visible language readiness label as 'readiness_message', then verify the label states that this language pair needs a download. This is an environment-readiness check only; do not attempt translation or change app settings.",
+      "status": "error",
+      "children": [
+        {
+          "instruction_id": "2666fa51-09e0-4426-8dbc-96a3ed4d0e78",
+          "instruction_class": "non_driver_action",
+          "module_id": "",
+          "instruction": "English is the source language and Spanish is the destination language.",
+          "command": "ASSERTION",
+          "error": null,
+          "parent_instruction_id": "",
+          "classification_layer_resp": [
+            {
+              "operation": "English is the source language and Spanish is the destination language.",
+              "agent": "Operation Agent",
+              "operation_dict": {
+                "operation_type": "ASSERTION",
+                "assertion_tree": {
+                  "sub_results": [
+                    {
+                      "description": "The source language is English.",
+                      "passed": true,
+                      "operator": "equals",
+                      "transforms": [
+                        "strip"
+                      ],
+                      "json_path": null,
+                      "expected": "English",
+                      "extracted_value": "{{source_language_english}}",
+                      "store_key": "source_language_english",
+                      "variable_refs": {
+                        "{{source_language_english}}": "English"
+                      }
+                    },
+                    {
+                      "description": "The destination language is Spanish.",
+                      "passed": true,
+                      "operator": "equals",
+                      "transforms": [
+                        "strip"
+                      ],
+                      "json_path": null,
+                      "expected": "Spanish",
+                      "extracted_value": "{{destination_language_spanish}}",
+                      "store_key": "destination_language_spanish",
+                      "variable_refs": {
+                        "{{destination_language_spanish}}": "Spanish"
+                      }
+                    }
+                  ],
+                  "sub_checks": [
+                    {
+                      "description": "The source language is English.",
+                      "store_key": "source_language_english",
+                      "expected_value": "English",
+                      "extracted_value": "{{source_language_english}}",
+                      "operator": "equals",
+                      "transforms": [
+                        "strip"
+                      ]
+                    },
+                    {
+                      "description": "The destination language is Spanish.",
+                      "store_key": "destination_language_spanish",
+                      "expected_value": "Spanish",
+                      "extracted_value": "{{destination_language_spanish}}",
+                      "operator": "equals",
+                      "transforms": [
+                        "strip"
+                      ]
+                    }
+                  ],
+                  "composite_operator": "and",
+                  "verification": "",
+                  "claim": "English is the source language and Spanish is the destination language.",
+                  "operator": [],
+                  "assertion_operands": [],
+                  "left_operand": null,
+                  "right_operand": null,
+                  "operands": []
+                }
+              },
+              "variable": {},
+              "secrets": {},
+              "params": {}
+            }
+          ],
+          "classification_error": {},
+          "operations": [
+            {
+              "operation_id": "039057a8",
+              "instruction_id": "2666fa51-09e0-4426-8dbc-96a3ed4d0e78",
+              "instruction": "English is the source language and Spanish is the destination language.",
+              "intent": "English is the source language and Spanish is the destination language.",
+              "operation_start": "2026-10-24T21:36:04.121229+00:00",
+              "operation_end": "",
+              "status": "success",
+              "command": "ASSERTION",
+              "name": "",
+              "target": "",
+              "value": "",
+              "message": "",
+              "operation_dict": "",
+              "frame": "",
+              "surface": "",
+              "frame_path": "",
+              "grounded_by": "",
+              "error_message": "",
+              "code_snippet": "",
+              "sub_instruction_obj": "{\"operation\":\"English is the source language and Spanish is the destination language.\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"ASSERTION\"},\"reasoning\":\"English is the source language and Spanish is the destination language.\",\"variable\":{},\"secrets\":{},\"params\":{}}",
+              "test_id": "",
+              "test_version": "",
+              "action": "",
+              "string_to_float": false,
+              "feedback_msg": "",
+              "time_taken": "",
+              "create_time_stamp": "",
+              "update_time_stamp": "",
+              "locator_variable": "",
+              "locator_variable_name": "",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/039057a8.webp",
+              "alternative_xpaths": [],
+              "attribute": "",
+              "value_description": "",
+              "url": "",
+              "navigation_direction": "",
+              "tagified_image_url": "",
+              "query_variable_name": "",
+              "query_variable_value": "",
+              "query_variable_type": "",
+              "expected_value": "",
+              "queried_value": "",
+              "operator": "",
+              "assertion_status": true,
+              "query_info_dict": {},
+              "query_content_confidence": "none",
+              "debugging_logs": [],
+              "locator_index": 0,
+              "query_html": "",
+              "user_variables": "[]",
+              "optional_flag": false,
+              "max_retries": 0,
+              "retries_delay": 0,
+              "explicit_wait": 0,
+              "implicit_wait": 0,
+              "tab_index": "",
+              "tab_identifier": "",
+              "scroll_value": 1,
+              "scroll_direction": "",
+              "mi_scroll_payload": {},
+              "sleep_duration": 0,
+              "app_id": "",
+              "manual_interaction_tag": "",
+              "string_to_float_list": [],
+              "js_snippet": "",
+              "code_error": "",
+              "hide": false,
+              "dismiss_dialog": false,
+              "use_v2_mobile_tagging": true,
+              "multiple_inputs": false,
+              "dialog_action": "",
+              "dialog_type": "",
+              "is_coordinates_used_for_interaction": false,
+              "element_coordinates_ratio": [],
+              "element_bounds_ratio": [],
+              "x_coord": null,
+              "y_coord": null,
+              "target_x_coord": null,
+              "target_y_coord": null,
+              "source_description": null,
+              "target_description": null,
+              "use_coordinates": false,
+              "kaneaiMobileTaggingImageLimit": 1,
+              "clicks_order_code": "se_js_ac",
+              "selector": "",
+              "selector_target": "",
+              "math_result_variable_name": "",
+              "math_result_variable_value": "",
+              "expression_tree": {
+                "operator": [],
+                "assertion_operands": [],
+                "left_operand": null,
+                "right_operand": null,
+                "operands": [],
+                "sub_results": [
+                  {
+                    "description": "The source language is English.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [
+                      "strip"
+                    ],
+                    "json_path": null,
+                    "expected": "English",
+                    "extracted_value": "{{source_language_english}}",
+                    "store_key": "source_language_english",
+                    "variable_refs": {
+                      "{{source_language_english}}": "English"
+                    }
+                  },
+                  {
+                    "description": "The destination language is Spanish.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [
+                      "strip"
+                    ],
+                    "json_path": null,
+                    "expected": "Spanish",
+                    "extracted_value": "{{destination_language_spanish}}",
+                    "store_key": "destination_language_spanish",
+                    "variable_refs": {
+                      "{{destination_language_spanish}}": "Spanish"
+                    }
+                  }
+                ],
+                "sub_checks": [
+                  {
+                    "description": "The source language is English.",
+                    "store_key": "source_language_english",
+                    "expected_value": "English",
+                    "extracted_value": "{{source_language_english}}",
+                    "operator": "equals",
+                    "transforms": [
+                      "strip"
+                    ]
+                  },
+                  {
+                    "description": "The destination language is Spanish.",
+                    "store_key": "destination_language_spanish",
+                    "expected_value": "Spanish",
+                    "extracted_value": "{{destination_language_spanish}}",
+                    "operator": "equals",
+                    "transforms": [
+                      "strip"
+                    ]
+                  }
+                ],
+                "composite_operator": "and",
+                "verification": "The currently selected source and destination languages in Bridge2Babble.",
+                "claim": "English is the source language and Spanish is the destination language."
+              },
+              "assertion_tree": {
+                "assertion_id": "assert_cp_1",
+                "description": "English is the source language and Spanish is the destination language.",
+                "composite_operator": "and",
+                "is_final": false,
+                "verification": "The currently selected source and destination languages in Bridge2Babble.",
+                "sub_results": [
+                  {
+                    "description": "The source language is English.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [
+                      "strip"
+                    ],
+                    "json_path": null,
+                    "expected": "English",
+                    "extracted_value": "{{source_language_english}}",
+                    "store_key": "source_language_english",
+                    "variable_refs": {
+                      "{{source_language_english}}": "English"
+                    }
+                  },
+                  {
+                    "description": "The destination language is Spanish.",
+                    "passed": true,
+                    "operator": "equals",
+                    "transforms": [
+                      "strip"
+                    ],
+                    "json_path": null,
+                    "expected": "Spanish",
+                    "extracted_value": "{{destination_language_spanish}}",
+                    "store_key": "destination_language_spanish",
+                    "variable_refs": {
+                      "{{destination_language_spanish}}": "Spanish"
+                    }
+                  }
+                ]
+              },
+              "assertion_tree_simplified": {},
+              "network_throttle": {},
+              "is_mobile_offline": false,
+              "autoheal": false,
+              "reprobe": false,
+              "click_modifier": null,
+              "db_query": "",
+              "db_details": {},
+              "db_query_decoded": "",
+              "is_global_variable": false,
+              "is_global_variable_persist": false,
+              "global_variable_id": "",
+              "wait_for_element_timeout": 0,
+              "failure_condition": "Fail test immediately",
+              "screenshot_command": "",
+              "smartui_contents": {},
+              "smartui_results": {},
+              "result_type": "",
+              "result_hint": "",
+              "drag_offset": {},
+              "drag_displacement": {},
+              "hold_duration_ms": null,
+              "move_duration_ms": null,
+              "hold_at_destination_ms": null,
+              "start_coordinates": {},
+              "end_coordinates": {},
+              "element_rect": null,
+              "is_canvas": false,
+              "until_condition": "",
+              "until_max_retries": 0,
+              "until_settle_ms": 0,
+              "api_data": {},
+              "output_variables": {},
+              "visual_context": null,
+              "reasoning": "English is the source language and Spanish is the destination language."
+            }
+          ],
+          "status": "success",
+          "start_timestamp": "2026-10-24T21:36:04.121229+00:00",
+          "end_timestamp": "",
+          "type": "agent_generated",
+          "tags": [],
+          "html_paths": [],
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "content_type": "instruction",
+          "js_snippet": "",
+          "user_variables": "[]",
+          "api_data": {},
+          "params_used": false,
+          "hard_assertion": false,
+          "expected_outcome": "",
+          "module_execution_index": 0,
+          "module_version": null,
+          "network_throttle": {},
+          "isEdited": false,
+          "use_query_assertion_v2": false,
+          "db_query": "",
+          "db_details": {},
+          "network_assertion_content": {},
+          "screenshot_command": "",
+          "smartui_contents": {},
+          "generative_id": "12445d9028294f6881a7c76499be8f8f",
+          "plan_id": "",
+          "generative_objective": "Launch Bridge2Babble on a real cloud iPhone. Use no patient data and do not tap Download. Verify English is the source language and Spanish is the destination language. Store the exact visible language readiness label as 'readiness_message', then verify the label states that this language pair needs a download. This is an environment-readiness check only; do not attempt translation or change app settings.",
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "title": "",
+          "used_variables": [],
+          "reasoning": "English is the source language and Spanish is the destination language."
+        },
+        {
+          "instruction_id": "90365ec7-6ab9-40ed-8344-35cc85f8c327",
+          "instruction_class": "non_driver_action",
+          "module_id": "",
+          "instruction": "{{readiness_message}} states that this language pair needs a download.",
+          "command": "ASSERTION",
+          "error": null,
+          "parent_instruction_id": "",
+          "classification_layer_resp": [
+            {
+              "operation": "{{readiness_message}} states that this language pair needs a download.",
+              "agent": "Operation Agent",
+              "operation_dict": {
+                "operation_type": "ASSERTION",
+                "assertion_tree": {
+                  "sub_results": [
+                    {
+                      "description": "{{readiness_message}} states that this language pair needs a download.",
+                      "passed": false,
+                      "operator": "equals",
+                      "transforms": [],
+                      "json_path": null,
+                      "expected": "true",
+                      "extracted_value": "{{readiness_message_needs_download}}",
+                      "store_key": "readiness_message_needs_download",
+                      "variable_refs": {
+                        "{{readiness_message_needs_download}}": "false",
+                        "{{readiness_message}}": "English → Spanish: Ready offline · Apple Translation"
+                      }
+                    }
+                  ],
+                  "sub_checks": [
+                    {
+                      "description": "{{readiness_message}} states that this language pair needs a download.",
+                      "store_key": "readiness_message_needs_download",
+                      "expected_value": "true",
+                      "extracted_value": "{{readiness_message_needs_download}}",
+                      "operator": "equals",
+                      "transforms": []
+                    }
+                  ],
+                  "composite_operator": "and",
+                  "verification": "",
+                  "claim": "{{readiness_message}} states that this language pair needs a download.",
+                  "operator": [],
+                  "assertion_operands": [],
+                  "left_operand": null,
+                  "right_operand": null,
+                  "operands": []
+                }
+              },
+              "variable": {},
+              "secrets": {},
+              "params": {}
+            }
+          ],
+          "classification_error": {},
+          "operations": [
+            {
+              "operation_id": "c19a9869",
+              "instruction_id": "90365ec7-6ab9-40ed-8344-35cc85f8c327",
+              "instruction": "{{readiness_message}} states that this language pair needs a download.",
+              "intent": "{{readiness_message}} states that this language pair needs a download.",
+              "operation_start": "2026-10-24T21:36:28.671434+00:00",
+              "operation_end": "",
+              "status": "error",
+              "command": "ASSERTION",
+              "name": "",
+              "target": "",
+              "value": "",
+              "message": "",
+              "operation_dict": "",
+              "frame": "",
+              "surface": "",
+              "frame_path": "",
+              "grounded_by": "",
+              "error_message": "Checkpoint failed: \"{{readiness_message}} states that this language pair needs a download.\"",
+              "code_snippet": "",
+              "sub_instruction_obj": "{\"operation\":\"{{readiness_message}} states that this language pair needs a download.\",\"agent\":\"Operation Agent\",\"operation_dict\":{\"operation_type\":\"ASSERTION\"},\"reasoning\":\"{{readiness_message}} states that this language pair needs a download.\",\"variable\":{\"intent\":\"{{readiness_message}} states that this language pair needs a download.\"},\"secrets\":{},\"params\":{}}",
+              "test_id": "",
+              "test_version": "",
+              "action": "",
+              "string_to_float": false,
+              "feedback_msg": "",
+              "time_taken": "",
+              "create_time_stamp": "",
+              "update_time_stamp": "",
+              "locator_variable": "",
+              "locator_variable_name": "",
+              "image_url": "https://prodauteurartefacts.blob.core.windows.net/test-screenshots/test_screenshots/untagged_screenshot/c19a9869.webp",
+              "alternative_xpaths": [],
+              "attribute": "",
+              "value_description": "",
+              "url": "",
+              "navigation_direction": "",
+              "tagified_image_url": "",
+              "query_variable_name": "",
+              "query_variable_value": "",
+              "query_variable_type": "",
+              "expected_value": "",
+              "queried_value": "",
+              "operator": "",
+              "assertion_status": false,
+              "query_info_dict": {},
+              "query_content_confidence": "none",
+              "debugging_logs": [],
+              "locator_index": 0,
+              "query_html": "",
+              "user_variables": "[]",
+              "optional_flag": false,
+              "max_retries": 0,
+              "retries_delay": 0,
+              "explicit_wait": 0,
+              "implicit_wait": 0,
+              "tab_index": "",
+              "tab_identifier": "",
+              "scroll_value": 1,
+              "scroll_direction": "",
+              "mi_scroll_payload": {},
+              "sleep_duration": 0,
+              "app_id": "",
+              "manual_interaction_tag": "",
+              "string_to_float_list": [],
+              "js_snippet": "",
+              "code_error": "",
+              "hide": false,
+              "dismiss_dialog": false,
+              "use_v2_mobile_tagging": true,
+              "multiple_inputs": false,
+              "dialog_action": "",
+              "dialog_type": "",
+              "is_coordinates_used_for_interaction": false,
+              "element_coordinates_ratio": [],
+              "element_bounds_ratio": [],
+              "x_coord": null,
+              "y_coord": null,
+              "target_x_coord": null,
+              "target_y_coord": null,
+              "source_description": null,
+              "target_description": null,
+              "use_coordinates": false,
+              "kaneaiMobileTaggingImageLimit": 1,
+              "clicks_order_code": "se_js_ac",
+              "selector": "",
+              "selector_target": "",
+              "math_result_variable_name": "",
+              "math_result_variable_value": "",
+              "expression_tree": {
+                "operator": [],
+                "assertion_operands": [],
+                "left_operand": null,
+                "right_operand": null,
+                "operands": [],
+                "sub_results": [
+                  {
+                    "description": "{{readiness_message}} states that this language pair needs a download.",
+                    "passed": false,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "expected": "true",
+                    "extracted_value": "{{readiness_message_needs_download}}",
+                    "store_key": "readiness_message_needs_download",
+                    "variable_refs": {
+                      "{{readiness_message_needs_download}}": "false",
+                      "{{readiness_message}}": "English → Spanish: Ready offline · Apple Translation"
+                    }
+                  }
+                ],
+                "sub_checks": [
+                  {
+                    "description": "{{readiness_message}} states that this language pair needs a download.",
+                    "store_key": "readiness_message_needs_download",
+                    "expected_value": "true",
+                    "extracted_value": "{{readiness_message_needs_download}}",
+                    "operator": "equals",
+                    "transforms": []
+                  }
+                ],
+                "composite_operator": "and",
+                "verification": "The saved readiness message for the English-to-Spanish language pair.",
+                "claim": "{{readiness_message}} states that this language pair needs a download."
+              },
+              "assertion_tree": {
+                "assertion_id": "assert_cp_3",
+                "description": "{{readiness_message}} states that this language pair needs a download.",
+                "composite_operator": "and",
+                "is_final": true,
+                "verification": "The saved readiness message for the English-to-Spanish language pair.",
+                "sub_results": [
+                  {
+                    "description": "{{readiness_message}} states that this language pair needs a download.",
+                    "passed": false,
+                    "operator": "equals",
+                    "transforms": [],
+                    "json_path": null,
+                    "expected": "true",
+                    "extracted_value": "{{readiness_message_needs_download}}",
+                    "store_key": "readiness_message_needs_download",
+                    "variable_refs": {
+                      "{{readiness_message_needs_download}}": "false",
+                      "{{readiness_message}}": "English → Spanish: Ready offline · Apple Translation"
+                    }
+                  }
+                ]
+              },
+              "assertion_tree_simplified": {},
+              "network_throttle": {},
+              "is_mobile_offline": false,
+              "autoheal": false,
+              "reprobe": false,
+              "click_modifier": null,
+              "db_query": "",
+              "db_details": {},
+              "db_query_decoded": "",
+              "is_global_variable": false,
+              "is_global_variable_persist": false,
+              "global_variable_id": "",
+              "wait_for_element_timeout": 0,
+              "failure_condition": "Fail test immediately",
+              "screenshot_command": "",
+              "smartui_contents": {},
+              "smartui_results": {},
+              "result_type": "",
+              "result_hint": "",
+              "drag_offset": {},
+              "drag_displacement": {},
+              "hold_duration_ms": null,
+              "move_duration_ms": null,
+              "hold_at_destination_ms": null,
+              "start_coordinates": {},
+              "end_coordinates": {},
+              "element_rect": null,
+              "is_canvas": false,
+              "until_condition": "",
+              "until_max_retries": 0,
+              "until_settle_ms": 0,
+              "api_data": {},
+              "output_variables": {},
+              "visual_context": null,
+              "reasoning": "{{readiness_message}} states that this language pair needs a download."
+            }
+          ],
+          "status": "error",
+          "start_timestamp": "2026-10-24T21:36:28.671434+00:00",
+          "end_timestamp": "",
+          "type": "agent_generated",
+          "tags": [],
+          "html_paths": [],
+          "optional_flag": false,
+          "max_retries": 0,
+          "retries_delay": 0,
+          "explicit_wait": 0,
+          "implicit_wait": 0,
+          "content_type": "instruction",
+          "js_snippet": "",
+          "user_variables": "[]",
+          "api_data": {},
+          "params_used": false,
+          "hard_assertion": false,
+          "expected_outcome": "",
+          "module_execution_index": 0,
+          "module_version": null,
+          "network_throttle": {},
+          "isEdited": false,
+          "use_query_assertion_v2": false,
+          "db_query": "",
+          "db_details": {},
+          "network_assertion_content": {},
+          "screenshot_command": "",
+          "smartui_contents": {},
+          "generative_id": "12445d9028294f6881a7c76499be8f8f",
+          "plan_id": "",
+          "generative_objective": "Launch Bridge2Babble on a real cloud iPhone. Use no patient data and do not tap Download. Verify English is the source language and Spanish is the destination language. Store the exact visible language readiness label as 'readiness_message', then verify the label states that this language pair needs a download. This is an environment-readiness check only; do not attempt translation or change app settings.",
+          "error_message": "",
+          "error_code": "",
+          "reason": "",
+          "title": "",
+          "used_variables": [],
+          "reasoning": "{{readiness_message}} states that this language pair needs a download."
+        }
+      ],
+      "error_message": null,
+      "error_code": null,
+      "result_code": null,
+      "bifurcation_context": [],
+      "approach_reason": [
+        "The test expectation does not match the cloud iPhone's current language-pack state. English to Spanish is already available offline, so a label saying that a download is needed cannot be verified.",
+        "Update the check to accept the actual readiness label, or reset/provision the cloud iPhone so the English-to-Spanish offline language pack is absent before running a test that expects a download."
+      ],
+      "one_liner": null
+    }
+  ],
+  "modules": [],
+  "uploaded_files": [],
+  "test_params": [],
+  "test_level_variables": "[{\"name\":\"source_language_english\",\"value\":\"English\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"destination_language_spanish\",\"value\":\"Spanish\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"readiness_message\",\"value\":\"English → Spanish: Ready offline · Apple Translation\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"},{\"name\":\"readiness_message_needs_download\",\"value\":\"false\",\"value_type\":\"test_level\",\"variable_description\":\"ANALYZE result\"}]",
+  "test_global_variables": [
+    {
+      "id": 464885,
+      "name": "spanish_clinic_phrase",
+      "value": "¿Tiene alergias a algún medicamento?",
+      "session_value": "¿Tiene alergias a algún medicamento?",
+      "is_persist": false,
+      "environment_id": 0,
+      "environment_name": "No Env"
+    }
+  ],
+  "max_network_wait": 0,
+  "wait_buffer": 0,
+  "network_throttle": {},
+  "secrets": [],
+  "totp": [],
+  "environment_id": 0,
+  "environment": "",
+  "mobile_browser": false,
+  "native_popups": [],
+  "smartui": {},
+  "module_index": 0
+}
